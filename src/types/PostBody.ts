@@ -1,4 +1,4 @@
 export interface PostBody {
     title: string;
-    content: string;
+    content?: string;
 }

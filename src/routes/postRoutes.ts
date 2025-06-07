@@ -22,7 +22,7 @@ const postController: PostController = new PostController(posts);
 router.get('/posts', postController.getAllPosts);
 router.get('/posts/:id', postController.getPostById);
 router.post('/posts', postController.createPost);
-router.put('/posts/:id', updatePost);
-router.delete('/posts/:id', deletePost);
+router.put('/posts/:id', postController.editPost);
+router.delete('/posts/:id', postController.deletePost);
 
 export default router;
