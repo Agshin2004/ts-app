@@ -16,10 +16,10 @@ export class PostController {
         res.status(200).json(this.posts);
         return;
     };
-
+    
     getPostById: ControllerType = (req, res) => {
         const id: number = Number(req.params.id);
-        const post = this.posts.find((p) => p.id === id);
+        const post = this.posts.find((p) => p.id === id); 
         if (!post) {
             res.status(404).json({ error: 'post not found' });
             return;

@@ -1,11 +1,4 @@
 import { Router } from 'express';
-import {
-    getAllPosts,
-    getPostById,
-    createPost,
-    updatePost,
-    deletePost,
-} from '../controllers/postControllers';
 import { PostController } from '../controllers/PostController';
 import { Post } from '../models/post';
 
